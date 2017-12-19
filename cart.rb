@@ -15,7 +15,8 @@ class Cart
     @contents.delete(product)
   end
 
-  def subtotal  #before tax total
+  # before tax total
+  def subtotal
     sum = 0
     @contents.each do |product|
       sum += product.base_price
